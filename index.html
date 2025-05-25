@@ -5,117 +5,283 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
 </head>
 
 <body>
     <div id="header"></div>
-    <div id="splash">
-        <div id="splash_text"></div>
-    </div>
-    <section class="top">
-        <h1 class="top_h1">MAI<br class="br--sp"> PORTFOLIO<br><span class="top_h1__subTtl">- マイ ポートフォリオ -</span></h1>
-        <div class="scrolldown"><span>Scroll</span></div>
-        <figure class="top_firstImg"><img src="images/images03.jpg" alt="top of kanematsu"></figure>
-        <section class="top_profile js-fadein">
-            <h2 class="top_h2">-Profile-</h2>
-            <div class="top_profile__inner">
-                <figure class="top_profile__inner__parts"><img src="images/images01.jpg" alt="kanematsu mai">
-                </figure>
-                <section class="top_profile__inner__parts">
-                    <h3 class="top_h3 top_profile__aboutTtl">about</h3>
-                    <p class="top_profile__txt">
-                        氏名：兼松 真衣（かねまつ まい）<br>
-                        年齢：24歳<br>
-                        出身地：埼玉県 所沢市<br>
-                        居住地：岐阜県 岐阜市<br>
-                        出身大学：都留文科大学 文学部 比較文化学科<br>
-                    </p>
-                    <p class="top_profile__txt">
-                        国内最大規模のブライダル商材ECサイトにて、<br class="br--sp--none">
-                        <span class="u-bold">フロントエンドエンジニア・Webデザイナー</span><br class="br--sp--none">
-                        <span class="u-bold">ECマーケター</span>を約2年間経験。
-                    </p>
-                    <a href="" class="top_link__vm">VIEW MORE</a>
+    <div class="body_wrap">
+        <div id="splash">
+            <div id="splash_text"></div>
+        </div>
+        <section class="top">
+            <h1 class="top_h1">MAI<br class="br--sp"> PORTFOLIO<br><span class="top_h1__subTtl">- マイ ポートフォリオ -</span>
+            </h1>
+            <div class="scrolldown"><span>Scroll</span></div>
+            <section class="top_profile js-fadein">
+                <div class="scroll_target" id="profile"></div>
+                <h2 class="top_h2">-Profile-</h2>
+                <div class="top_profile__inner">
+                    <figure class="top_profile__inner__parts">
+                        <img src="images/profile.jpg" alt="kanematsu mai">
+                        <p class="top_profile__imgTxt">※富士山登山した時の写真（大学3年生）</p>
+                    </figure>
+                    <section class="top_profile__inner__parts">
+                        <h3 class="top_h3 top_profile__aboutTtl">about</h3>
+                        <p class="top_profile__txt">
+                            氏名：兼松 真衣（かねまつ まい）<br>
+                            年齢：24歳<br>
+                            出身地：埼玉県 所沢市<br>
+                            居住地：岐阜県 岐阜市<br>
+                            出身大学：都留文科大学 文学部 比較文化学科<br>
+                            経験スポーツ：なぎなた・ソフトテニス・剣道・バドミントン
+                        </p>
+                        <p class="top_profile__txt">
+                            国内最大規模のブライダル商材ECサイトにて、<br class="br--sp--none">
+                            <span class="u-bold">フロントエンドエンジニア・Webデザイナー</span><br class="br--sp--none">
+                            <span class="u-bold">ECマーケター</span>を約2年間経験。
+                        </p>
+                    </section>
+                </div>
+                <!-- <a href="" class="top_link__vm">VIEW MORE</a> -->
+            </section>
+            <section class="top_career js-fadein">
+                <div class="scroll_target" id="career"></div>
+                <h2 class="top_h2">-Career-</h2>
+                <div class="top_career__inner">
+                    <a href="https://www.piary.jp/"><img src="images/piary_site.jpg" alt="ピアリー 公式サイト">
+                        </figure>
+                        <a href="https://www.piary.jp/" class="top_link__vm" target="_blank">SITE PAGE</a>
+                        <section class="top_carre__inner__parts">
+                            <h3 class="top_h3 top_career__aboutTtl">職務経歴概要</h3>
+                            <p class="top_career__txt">
+                                ブライダル商材を扱う国内最大級規模のECサイトを展開する株式会社ピアリーにて、約2年間フロントエンドエンジニアとして商品やブランドの特集ページのコーディング作成を中心に従事しました。Webデザイン領域にも携わり、商品ページのバナー制作なども経験しました。2024年12月より楽天市場店のEC運営・マーケティングを担当し、ユーザー導線の改善、特集ページの設計、クーポン施策、LINEやメルマガを活用した販促など、多角的なアプローチで集客を行いました。コーディングとデザイン、さらにマーケティングの視点を融合させた実践的な提案・実装力が強みです。
+                            </p>
+                        </section>
+                        <section class="top_carre__inner__parts">
+                            <h3 class="top_h3 top_career__aboutTtl">職務経歴内容</h3>
+                            <a href="#content01" class="top_career__contentWrap js-modal-open">
+                                <p class="top_career__contentTxt">2023年4月～2024年11月</p>
+                                <p class="top_career__contentTxt">フロントエンドエンジニアとして、主に商品やブランドの特集ページのコーディング業務を担当。<br>
+                                    あわせて、Webデザイン業務として商品ページ用バナーの作成にも従事。<br>
+                                    <span class="top_career__txt--more">詳しく見る ▸</span>
+                                </p>
+                            </a>
+                            <a href="#content02" class="top_career__contentWrap js-modal-open">
+                                <p class="top_career__contentTxt">2024年12月～現在</p>
+                                <p class="top_career__contentTxt">PIARY楽天市場店、Bebery楽天市場店、PIARY
+                                    Yahoo!ショッピング店、PIARYギフトモール店の各モール店舗において、ECサイトの運営を担当。
+                                    <span class="top_career__txt--more">詳しく見る ▸</span>
+                                </p>
+                            </a>
+                        </section>
+                        <!-- ▼職務経歴モーダル中身▼ -->
+                        <section id="content01">
+                            <h3>■コーディング業務における自発的な課題解決とスキル習得</h3>
+                            <p>
+                                【課題】<br>
+                                コーディング初心者として業務に取り組み始めた当初は、必要なスキルが不足しており、自力での習得が求められました。加えて、週35ポイントの獲得を目標とするポイント制度では、JavaScriptを用いたLP制作などの高得点につながる業務機会が限られていたため、受け身の姿勢では安定的な達成が難しいという課題がありました。コーダーにも自発的にUI改善や特集ページの企画を提案し、業務を創出する姿勢が求められていました。
+                            </p>
+                            <p>
+                                【実施したこと】<br>
+                                自社のスキルマップに沿って、サイト構築に必要とされる幅広いスキルの獲得に努めました。コーディングスキルだけでなく、デザイン・Excelの操作・マーケティング知識・商品理解といった周辺領域のスキルも自宅学習を通じて積極的にインプットしました。実務ではそれらの知識を活かし、課題や改善点を自ら見つけて実践に落とし込みながら、着実なスキル向上を目指しました。<br>
+                                また、ポイント制度においては、受け身で待つだけでは目標達成が困難であると感じたため、待ちの姿勢を脱し、業務を“つくる”意識を強く持って行動しました。具体的には、サイトUIの改善案や特集ページの企画を自ら立案し、マーケティング担当に提案。デザインや構成の段階から関わることで、自分の手でコーディングまで完結できる業務を生み出し、ポイント獲得の安定化につなげました。
+
+                            </p>
+                            <p>
+                                【結果】<br>
+                                これらの取り組みにより、担当業務において設定された目標を継続的に達成することができました。自宅学習と業務実践のサイクルを継続する中で、幅広いスキルの習得が進み、サイト構築全体を俯瞰できる視点が身についたことで、業務の質も向上しました。<br>
+                                また、単なる作業者ではなく、課題の発見から提案・実行までを一貫して担う意識と行動力が身に付いたことを実感しています。<br>
+                                一方で、デザインにおける設計面や、ユーザーに魅力を効果的に届けるための発信方法に関するスキルや知識には、まだ課題があると感じています。今後はこれらの分野についても意識的に学び、より訴求力の高いサイト制作や提案につなげていきたいと考えています。
+
+                            </p>
+                        </section>
+                        <section id="content02">
+                            <h3>■キャンドル在庫過多問題に対する新商品企画と販売強化に向けての取り組み</h3>
+                            <p>
+                                【課題】<br>
+                                キャンドルの在庫過多を効率的に解消し、収益化を図ることが求められていました。
+                            </p>
+                            <p>
+                                【実施したこと】<br>
+                                市場調査の結果、キャンドル単体では訴求力が弱く、販売促進が難しいと判断しました。そこで、既に市場で高い人気を誇るSWATiやCLAYDといった入浴剤とキャンドルを組み合わせた【入浴剤＋キャンドルセット】を企画・立案いたしました。<br>
+                                ネームバリューのある商品とのセットにすることで、製品としての魅力・付加価値を高めました。<br>
+                                販売開始当初は、商品画像にあまり注力していませんでしたが、売上が伸び悩んだことを受け、様々な施策を打ち出したうえで、魅力を最大限伝えられるよう商品画像の再撮影を実施しました。<br>
+                                例えば、SWATiの入浴剤は“海のパール”をモチーフにした商品であり、ターゲット層は「海辺でリラックスする女性」と設定。これに合わせて、貝殻・サンゴ・砂浜の砂・洋書などを用いた世界観のある構成とし、さらにキャンドルに灯をともすことで「使用シーン」が具体的に想像できるよう工夫を施しました。また、商品写真の撮影サポートだけでなく、最適な価格設定や、購買意欲を高める商品ページの改善にも一貫して携わりました。
+                            </p>
+                            <p>
+                                【結果】<br>
+                                商品画像を刷新した結果、これまで月2個程度の販売数が、2ヶ月で計10個と大きく伸長。<br>
+                                さらにレビューでは、「写真がかわいくて、何気ない日のギフトとして購入した」との声もいただきました。この取り組みを通して、「商品の魅力を最大限に引き出す方法を考え、形にすること」が、自分にとってのやりがいであることを改めて実感しました。この経験を受け、「魅力を最大限引き出し、発信していくこと」をさらに追及していきたいと強く思いました。
+                            </p>
+                        </section>
+                        <!-- ▲職務経歴モーダル中身▲ -->
+                </div>
+            </section>
+            <section class="top_work js-fadein">
+                <div class="scroll_target" id="works"></div>
+                <h2 class="top_h2">-Works-</h2>
+                <section class="top_work__inner">
+                    <h3 class="top_h3 top_work__ttl">Coding</h3>
+                    <div class="top_work__content--crd">
+                        <a href="#samugetan" class="top_work__content__parts--crd js-design__fadein js-modal-open">
+                            <img src="images/cording_samugetan.jpg" alt="">
+                            <p class="top_work__skillWrap">
+                                <span class="top_work__skillParts">EC-CUBE</span><br>
+                                <span class="top_work__skillParts">HTML</span><br>
+                                <span class="top_work__skillParts">CSS</span>
+                            </p>
+                            <p class="top_work__contetnt__txt">
+                                <span class="u-bold">┃参鶏湯紹介特集ページ</span><br>
+                                <span class="top_work__contetnt__txt--exp">HTMLとCSSの基礎を集約したページ。</span>
+                            </p>
+                        </a>
+                        <a href="#kuma" class="top_work__content__parts--crd js-design__fadein js-modal-open">
+                            <img src="images/cording_kuma.jpg" alt="">
+                            <p class="top_work__skillWrap">
+                                <span class="top_work__skillParts">EC-CUBE</span><br>
+                                <span class="top_work__skillParts">HTML</span><br>
+                                <span class="top_work__skillParts">CSS</span><br>
+                                <span class="top_work__skillParts">JavaScript</span>
+                                <span class="top_work__skillParts">jQuery</span>
+                            </p>
+                            <p class="top_work__contetnt__txt">
+                                <span class="u-bold">┃くまくんのぎゅっと幸せクッキー缶</span><br>
+                                <span class="top_work__contetnt__txt--exp">幅広い動きを取り入れた、出産祝いギフト商材の特集ページ。</span>
+                            </p>
+                        </a>
+                        <a href="#thede" class="top_work__content__parts--crd js-design__fadein js-modal-open">
+                            <img src="images/cording_thede.jpg" alt="">
+                            <p class="top_work__skillWrap">
+                                <span class="top_work__skillParts">WordPress(レスポンシブ)</span><br>
+                                <span class="top_work__skillParts">HTML</span><br>
+                                <span class="top_work__skillParts">CSS</span><br>
+                                <span class="top_work__skillParts">Excel関数</span>
+                            </p>
+                            <p class="top_work__contetnt__txt">
+                                <span class="u-bold">┃ギフト専用サイトtheDeの商品ページ</span><br>
+                                <span class="top_work__contetnt__txt--exp">デザイン～Excelを用いたコーディングを担当。</span>
+                            </p>
+                        </a>
+                        <a href="#thede_bra" class="top_work__content__parts--crd js-design__fadein js-modal-open">
+                            <img src="images/cording_thede_bra.jpg" alt="">
+                            <p class="top_work__skillWrap">
+                                <span class="top_work__skillParts">WordPress(レスポンシブ)</span><br>
+                                <span class="top_work__skillParts">HTML</span><br>
+                                <span class="top_work__skillParts">CSS</span><br>
+                                <span class="top_work__skillParts">Excel関数</span>
+                            </p>
+                            <p class="top_work__contetnt__txt">
+                                <span class="u-bold">┃ギフト専用サイトtheDeのブランドページ</span><br>
+                                <span class="top_work__contetnt__txt--exp">Excel関数を用いてページの構成を仕組み化。</span>
+                            </p>
+                        </a>
+                        <a href="#curry" class="top_work__content__parts--crd js-design__fadein js-modal-open">
+                            <img src="images/cording_curry.jpg" alt="">
+                            <p class="top_work__skillWrap">
+                                <span class="top_work__skillParts">EC-CUBE(レスポンシブ)</span><br>
+                                <span class="top_work__skillParts">HTML</span><br>
+                                <span class="top_work__skillParts">CSS</span>
+                            </p>
+                            <p class="top_work__contetnt__txt">
+                                <span class="u-bold">┃姉妹サイトのソーシャルギフト専門サイト</span><br>
+                                <span class="top_work__contetnt__txt--exp">EC-CUBEのレスポンシブでのコーディング。</span>
+                            </p>
+                        </a>
+                        <a href="#bebery" class="top_work__content__parts--crd js-design__fadein js-modal-open">
+                            <img src="images/cording_bebery.jpg" alt="">
+                            <p class="top_work__skillWrap">
+                                <span class="top_work__skillParts">WordPress(レスポンシブ)</span><br>
+                                <span class="top_work__skillParts">HTML</span><br>
+                                <span class="top_work__skillParts">CSS</span>
+                                <span class="top_work__skillParts">JavaScript</span>
+                                <span class="top_work__skillParts">jQuery</span>
+                            </p>
+                            <p class="top_work__contetnt__txt">
+                                <span class="u-bold">┃姉妹サイトの出産祝い専門サイト</span><br>
+                                <span class="top_work__contetnt__txt--exp">出産祝いギフト専門サイトBeberyのクリスマスギフト特集。</span>
+                            </p>
+                        </a>
+                    </div>
+                    <!-- ▼コーディング モーダル中身▼ -->
+                    <section id="samugetan">
+                        <h3>花嫁向け 参鶏湯特集ページ</h3>
+                        <p>
+                            ■ページ概要<br>
+                            鍼灸接骨院監修の花嫁ダイエット向け参鶏湯の紹介特集ページ。
+                        </p>
+                        <p>
+                            ■身に付いたスキル<br>
+                            HTML / CSS の基礎的な構文を幅広く使用しながら、細かなUI要素を一つひとつ丁寧に調整しました。<br>
+                            特に、複雑な背景画像の配置や、要素間の余白・位置の微調整など、視覚的な整合性を保つための細かなコーディング対応が求められました。<br>
+                            また、スマートフォンでの表示においては、レスポンシブ対応のために calc() や柔軟な単位（%・vw など）を活用し、画面幅に応じたレイアウト設計を行いました。
+                        </p>
+                        <a href="https://www.piary.jp/beauty/special/rela/" class="top_link__vm top_link__vm--modal"
+                            target="_blank">実際のサイトを見る</a>
+                    </section>
+                    <section id="kuma">
+                        <h3>出産内祝い向けクッキー缶ギフト紹介特集</h3>
+                        <p>
+                            ■ページ概要<br>
+                            さっちん菓子工房による出産内祝い向けクッキー缶を紹介する特集ページを制作。<br>
+                            くまのクッキー缶に合わせ、絵本のような温かみのある世界観を演出しました。
+                        </p>
+                        <p>
+                            ■身に付いたスキル<br>
+                            子どもが見て楽しめる絵本のような世界観を表現するため、背景を固定しながらテキストがスライドする演出や、情報量の多いコンテンツを1枚ずつ見せるスライドUIを実装しました。<br>
+                            見る人がワクワクするような体験を届けるため、UXを意識した演出と、適切なJavaScriptの実装力が求められた案件でした。
+                        </p>
+                        <a href="https://www.piary.jp/uchiiwai_baby/sacchin_kumakun_cookie/"
+                            class="top_link__vm top_link__vm--modal" target="_blank">実際のサイトを見る</a>
+                    </section>
+                    <!-- ▲コーディング モーダル中身▲ -->
                 </section>
-            </div>
-        </section>
-        <section class="top_work js-fadein">
-            <h2 class="top_h2">-Works-</h2>
-            <section class="top_work__inner">
-                <h3 class="top_h3 top_work__ttl">Coding</h3>
-                <div class="top_work__content--crd">
-                    <a href="" class="top_work__content__parts--crd js-design__fadein">
-                        <img src="images/images02.jpg" alt="">
-                        <p class="top_work__contetnt__txt">
-                            ┃タイトル<br>
-                            テキストテキストテキストテキスト
-                        </p>
-                    </a>
-                    <a href="" class="top_work__content__parts--crd js-design__fadein">
-                        <img src="images/images02.jpg" alt="">
-                        <p class="top_work__contetnt__txt">
-                            ┃タイトル<br>
-                            テキストテキストテキストテキスト
-                        </p>
-                    </a>
-                    <a href="" class="top_work__content__parts--crd js-design__fadein">
-                        <img src="images/images02.jpg" alt="">
-                        <p class="top_work__contetnt__txt">
-                            ┃タイトル<br>
-                            テキストテキストテキストテキスト
-                        </p>
-                    </a>
-                    <a href="" class="top_work__content__parts--crd js-design__fadein">
-                        <img src="images/images02.jpg" alt="">
-                        <p class="top_work__contetnt__txt">
-                            ┃タイトル<br>
-                            テキストテキストテキストテキスト
-                        </p>
-                    </a>
-                </div>
-            </section>
-            <section class="top_work__inner js-design__fadein">
-                <h3 class="top_h3 top_work__ttl--02">RMS Marketing</h3>
-                <figure class="top_work__img"><img src="images/images04.jpg" alt=""></figure>
-                <div class="top_work__content--mrk mark-border">
-                    <section class="top_work__content__parts--mark">
-                        <h4 class="top_h4">業務内容</h4>
-                        <p class="top_work__contetnt__txt">
-                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                        </p>
-                    </section>
-                    <section class="top_work__content__parts--mark">
-                        <h4 class="top_h4">実績</h4>
-                        <p class="top_work__contetnt__txt">
-                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                        </p>
-                    </section>
-                </div>
-            </section>
-            <section class="top_work__inner">
-                <h3 class="top_h3 top_work__ttl">Design</h3>
-                <div class="top_work__content--dsn">
-                    <div class="top_work__content__parts--dsn js-design__fadein">
-                        <img src="images/images05.jpg" alt="">
-                        <p>テキストテキストテキストテキスト</p>
+                <section class="top_work__inner js-design__fadein">
+                    <h3 class="top_h3 top_work__ttl--02">RMS Marketing</h3>
+                    <figure class="top_work__img"><img src="images/marketing.jpg" alt=""></figure>
+                    <div class="top_work__content--mrk mark-border">
+                        <section class="top_work__content__parts--mark">
+                            <h4 class="top_h4">業務内容</h4>
+                            <p class="top_work__contetnt__txt">
+                                PIARY楽天市場店、Bebery楽天市場店、PIARY Yahoo!ショッピング店、PIARYギフトモール店の各モール店舗において、ECサイトの運営全般を担当。
+                            </p>
+                        </section>
+                        <section class="top_work__content__parts--mark">
+                            <h4 class="top_h4">実績</h4>
+                            <p class="top_work__contetnt__txt">
+                                ■母の日ギフト施策において、売上昨対200%達成。<br>
+                                ■キャンドル在庫過多問題に対する新商品企画。商品画像の見直しにより、売上個数の単月目標達成。
+                            </p>
+                        </section>
                     </div>
-                    <div class="top_work__content__parts--dsn js-design__fadein">
-                        <img src="images/images05.jpg" alt="">
-                        <p>テキストテキストテキストテキスト</p>
+                    <a href="https://www.piary.jp/" class="top_link__vm" target="_blank">VIEW MORE</a>
+                </section>
+                <section class="top_work__inner">
+                    <h3 class="top_h3 top_work__ttl">Design</h3>
+                    <div class="top_work__content--dsn">
+                        <div class="top_work__content__parts--dsn js-design__fadein">
+                            <img src="images/images05.jpg" alt="">
+                            <p>テキストテキストテキストテキスト</p>
+                        </div>
+                        <div class="top_work__content__parts--dsn js-design__fadein">
+                            <img src="images/images05.jpg" alt="">
+                            <p>テキストテキストテキストテキスト</p>
+                        </div>
                     </div>
-                </div>
+                </section>
             </section>
+            <!-- <section class="top_contact js-fadein">
+                <figure class="top_contact__inner"><img src="images/images06.jpg" alt=""></figure>
+                <div class="top_contact__inner">
+                    <h2 class="top_h2">-Contact-</h2>
+                    <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
+            </section> -->
+            <p class="top_present__txt">Copyright © mai kanematsu, All rights reserved.</p>
         </section>
-        <section class="top_contact js-fadein">
-            <figure class="top_contact__inner"><img src="images/images06.jpg" alt=""></figure>
-            <div class="top_contact__inner">
-                <h2 class="top_h2">-Contact-</h2>
-                <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-        </section>
-        <p class="top_present__txt">Copyright © mai kanematsu, All rights reserved.</p>
-    </section>
+    </div>
     <div id="footer"></div>
 
     <!-- jQueryをCDNから読み込み -->
@@ -124,6 +290,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
     <!--自作のJS-->
     <script>
         $(function () {
@@ -191,6 +359,28 @@
                     }, 200 * i);
                 }
             });
+        });
+
+        //▼モーダル
+        //初回のみモーダルをすぐ出す判定。flagがモーダル表示のstart_open後に代入される
+        var access = $.cookie('access')
+        if (!access) {
+            flag = true;
+            $.cookie('access', false);
+        } else {
+            flag = false
+        }
+
+        //モーダル表示
+        $(".js-modal-open").modaal({
+            start_open: flag, // ページロード時に表示するか
+            overlay_close: true,//モーダル背景クリック時に閉じるか
+            before_open: function () {// モーダルが開く前に行う動作
+                $('html').css('overflow-y', 'hidden');/*縦スクロールバーを出さない*/
+            },
+            after_close: function () {// モーダルが閉じた後に行う動作
+                $('html').css('overflow-y', 'scroll');/*縦スクロールバーを出す*/
+            }
         });
     </script>
 </body>
