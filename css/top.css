@@ -393,18 +393,6 @@ figure {
 }
 
 /* モーダル中身 */
-/*infoエリアをはじめは非表示*/
-#content01,
-#content02,
-#samugetan,
-#kuma,
-#thede,
-#thede_bra,
-#curry,
-#bebery{
-	display: none;
-}
-
 /*モーダルの横幅を変更したい場合*/
 .modaal-container{
     max-width: 600px;
