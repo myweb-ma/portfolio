@@ -412,6 +412,19 @@ figure {
     background: #666;
 }
 
+.modaal-wrapper .modaal-close,
+.modaal-close:focus,
+.modaal-close:hover{
+    background-color: #b93d0c!important;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+    background: #fff!important;
+}
+
 /* works */
 .top_work {
     width: 90%;
