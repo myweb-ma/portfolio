@@ -626,7 +626,7 @@ figure {
     }
 
     .top_work__content__parts--crd {
-        width: calc((100% - 10px) / 2);
+        width: calc((100% - 27px) / 2);
     }
 
     .top_work__content__parts--crd:nth-of-type(n+3) {
