@@ -198,6 +198,10 @@ figure {
     height: 1px;
 }
 
+.br--sp{
+    display: none;
+}
+
 /* ▼hタグ▼ */
 
 .top_h1 {
@@ -306,7 +310,7 @@ figure {
 }
 
 .top_link__vm--modal {
-    width: 40%;
+    width: 230px;
 }
 
 .top_link__vm::after {
@@ -324,13 +328,40 @@ figure {
 .top_link__vm:hover {
     background: #6c9f82;
     color: #fff;
-    /* letter-spacing: 0.5em; */
     transform: translateY(-5px);
 }
 
 .top_link__vm:hover::after {
     border-color: #fff;
 }
+
+/* ▼モーダル中身▼ */
+.modal_inner__cont{
+    border-top: 1.5px solid #858585;
+    padding: 30px;
+    font-size: 13px;
+    line-height: 1.7;  
+    margin: 0; 
+}
+
+.modal_inner__cont:first-of-type{
+    margin-top: 20px;
+}
+
+.modal_inner__cont:last-of-type{
+    border-bottom: 1.5px solid #858585;
+}
+
+.modal_inner__ttl{
+    font-size: 23px;
+    text-align: center;
+    color: #b93d0c;
+}
+
+.modal_inner__subttl{
+    font-size: 18px;
+}
+/* ▲モーダル中身▲ */
 
 /* コンテンツ装飾 */
 .top_firstImg {
@@ -480,7 +511,11 @@ figure {
     width: calc(100% - 210px);
 }
 
-.top_work__inner{
+.top_work__inner {
+    margin-top: 10px;
+}
+
+.top_work__inner:nth-of-type(n+2){
     margin-top: 50px;
 }
 
@@ -618,7 +653,7 @@ figure {
         display: none;
     }
 
-    .top_h1{
+    .top_h1 {
         font-size: 45px;
     }
 
@@ -628,6 +663,12 @@ figure {
     }
 
     /* ▲fade-in▲ */
+
+    /* ▼ボタン▼ */
+    .top_link__vm--modal{
+        width: 90%;
+    }
+    /* ▲ボタン▲ */
 
     /* ▼スクロール▼ */
     .scrolldown {
@@ -682,7 +723,16 @@ figure {
         width: 100%;
     }
 
+    /* career */
+    .top_career {
+        margin-top: 80px;
+    }
+
     /* work */
+    .top_work {
+        margin-top: 80px;
+    }
+
     .top_work__content--crd,
     .top_work__content--dsn {
         flex-wrap: wrap;
@@ -714,20 +764,6 @@ figure {
 
     .top_work__content__parts--dsn {
         width: calc((100% - 10px) / 2)
-    }
-
-    /* contact */
-    .top_contact {
-        display: block;
-        padding: 30px 15px;
-    }
-
-    .top_contact__inner {
-        width: 100%;
-    }
-
-    .top_contact__inner {
-        margin-top: 30px;
     }
 
     /* ▲トップ▲ */
