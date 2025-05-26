@@ -37,7 +37,7 @@
 /*=== 丸が動いてスクロールを促す ====*/
 .scrolldown {
     position: absolute;
-    top: -20%;
+    top: -5vh;
     left: 50%;
 }
 
@@ -365,10 +365,6 @@ figure {
     margin: 120px auto;
 }
 
-.top_career__inner {
-    margin-top: 50px;
-}
-
 .top_carre__inner__parts {
     margin-top: 50px;
 }
@@ -468,14 +464,10 @@ figure {
 /* works */
 .top_work {
     width: 90%;
-    margin: 120px auto;
+    margin: 150px auto;
 }
 
 .top_work__img {
-    margin-top: 50px;
-}
-
-.top_work__inner {
     margin-top: 50px;
 }
 
@@ -485,6 +477,10 @@ figure {
 
 .top_work__ttl--02::after {
     width: calc(100% - 210px);
+}
+
+.top_work__inner{
+    margin-top: 50px;
 }
 
 .top_work__content--crd,
@@ -562,7 +558,7 @@ figure {
 
 .js-design__fadein {
     opacity: 0;
-    transition: 1s;
+    /* transition: 1s; */
 }
 
 .js-design__fadein.is-show {
