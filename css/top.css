@@ -168,7 +168,7 @@ body {
 .top {
     font-family: 'LINE Seed';
     background-color: #F6F6F6;
-    padding: 10% 50px;
+    padding: 20% 50px;
     position: relative;
 }
 
@@ -200,11 +200,11 @@ figure {
 
 /* ▼hタグ▼ */
 
-.top_h1,
-.top_h2 {
+.top_h1 {
     font-family: 'LINE Seed Bold';
     text-align: center;
     letter-spacing: 3px;
+    font-size: 60px;
 }
 
 .top_h3 {
@@ -618,6 +618,10 @@ figure {
         display: none;
     }
 
+    .top_h1{
+        font-size: 45px;
+    }
+
     /* ▼fade-in▼ */
     .js-fadein {
         transition: 2s;
@@ -661,11 +665,11 @@ figure {
 
     /* ▼トップ▼ */
     .top {
-        padding: 100px 0;
+        padding: 130px 0;
     }
 
     .top_profile {
-        margin-top: 70%;
+        margin-top: 50%;
     }
 
     .top_profile__inner {
