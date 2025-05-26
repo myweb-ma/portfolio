@@ -278,9 +278,9 @@
                     </section>
                     <!-- ▲コーディング モーダル中身▲ -->
                 </section>
-                <section class="top_work__inner js-design__fadein">
+                <section class="top_work__inner">
                     <h3 class="top_h3 top_work__ttl--02">RMS Marketing</h3>
-                    <figure class="top_work__img"><img src="images/marketing.jpg" alt=""></figure>
+                    <figure class="top_work__img js-fadein"><img src="images/marketing.jpg" alt=""></figure>
                     <div class="top_work__content--mrk mark-border">
                         <section class="top_work__content__parts--mark">
                             <h4 class="top_h4">業務内容</h4>
@@ -301,128 +301,32 @@
                 <section class="top_work__inner">
                     <h3 class="top_h3 top_work__ttl">Design</h3>
                     <div class="top_work__content--dsn">
-                        <div class="top_work__content__parts--dsn js-design__fadein">
+                        <a href="" class="top_work__content__parts--dsn js-design__fadein">
                             <img src="images/images05.jpg" alt="">
                             <p>テキストテキストテキストテキスト</p>
-                        </div>
-                        <div class="top_work__content__parts--dsn js-design__fadein">
+                        </a>
+                        <a href="" class="top_work__content__parts--dsn js-design__fadein">
                             <img src="images/images05.jpg" alt="">
                             <p>テキストテキストテキストテキスト</p>
-                        </div>
+                        </a>
                     </div>
                 </section>
             </section>
-            <!-- <section class="top_contact js-fadein">
-                <figure class="top_contact__inner"><img src="images/images06.jpg" alt=""></figure>
-                <div class="top_contact__inner">
-                    <h2 class="top_h2">-Contact-</h2>
-                    <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                </div>
-            </section> -->
             <p class="top_present__txt">Copyright © mai kanematsu, All rights reserved.</p>
         </section>
     </div>
     <div id="footer"></div>
 
-    <!-- jQueryをCDNから読み込み -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-    <!--自作のJS-->
-    <script>
-        $(function () {
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
-        });
 
-        var bar = new ProgressBar.Line(splash_text, {
-            easing: 'easeInOut',
-            duration: 1000,
-            strokeWidth: 0.2,
-            color: '#6c9f82',
-            trailWidth: 0.2,
-            trailColor: '#6c9f82',
-            text: {
-                style: {
-                    position: 'absolute',
-                    left: '50%',
-                    top: '50%',
-                    padding: '0',
-                    margin: '-30px 0 0 0',
-                    transform: 'translate(-50%,-50%)',
-                    'font-size': '1rem',
-                    color: '#6c9f82',
-                },
-                autoStyleContainer: false
-            },
-            step: function (state, bar) {
-                bar.setText(Math.round(bar.value() * 100) + ' %');
-            }
-        });
+<!-- 各種ライブラリ（順番も大事） -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.1.0/progressbar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
-        //アニメーションスタート
-        bar.animate(1.0, function () {
-            $("#splash").delay(500).fadeOut(800);
-        });
-
-        $(function () {
-            $(window).on('load scroll', function () {
-                $('.js-fadein').each(function () {
-                    var target = $(this).offset().top;
-                    var scroll = $(window).scrollTop();
-                    var height = $(window).height();
-                    if (scroll > target - height) {
-                        $(this).addClass('is-active');
-                    }
-                });
-            });
-        });
-
-        $(window).scroll(function () {
-            // クラスを追加するwindowの位置を設定
-            var scrollTop = $(this).scrollTop();
-            var scrollBottom = scrollTop + $(this).height();
-            var effectPos = scrollBottom - 50;
-
-            // eachでliを順番に処理
-            $(".js-design__fadein").each(function (i) {
-                if (effectPos > $(this).offset().top) {
-                    var that = this;
-
-                    // 0.2s毎にずれて表示
-                    setTimeout(function () {
-                        $(that).addClass("is-show");
-                    }, 200 * i);
-                }
-            });
-        });
-
-        //▼モーダル
-        //初回のみモーダルをすぐ出す判定。flagがモーダル表示のstart_open後に代入される
-        var access = $.cookie('access')
-        if (!access) {
-            flag = true;
-            $.cookie('access', false);
-        } else {
-            flag = false
-        }
-
-        //モーダル表示
-        $(".js-modal-open").modaal({
-            start_open: flag, // ページロード時に表示するか
-            overlay_close: true,//モーダル背景クリック時に閉じるか
-            before_open: function () {// モーダルが開く前に行う動作
-                $('html').css('overflow-y', 'hidden');/*縦スクロールバーを出さない*/
-            },
-            after_close: function () {// モーダルが閉じた後に行う動作
-                $('html').css('overflow-y', 'scroll');/*縦スクロールバーを出す*/
-            }
-        });
-    </script>
+<!-- 自作JS（最後に） -->
+<script src="js/component.js"></script>
 </body>
 
 </html>
