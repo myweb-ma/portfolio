@@ -37,7 +37,7 @@
 /*=== 丸が動いてスクロールを促す ====*/
 .scrolldown {
     position: absolute;
-    top: -5vh;
+    top: -15vh;
     left: 50%;
 }
 
