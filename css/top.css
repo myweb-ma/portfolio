@@ -193,7 +193,7 @@ figure {
     font-family: 'LINE Seed Bold';
 }
 
-.scroll_target{
+.scroll_target {
     scroll-margin-top: 100px;
     height: 1px;
 }
@@ -225,7 +225,7 @@ figure {
 
 /* ▲hタグ▲ */
 
-.body_wrap{
+.body_wrap {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -263,7 +263,7 @@ figure {
     transition: transform 0.5s ease, 0.3s ease, color 0.3s ease;
 }
 
-.top_link__vm--modal{
+.top_link__vm--modal {
     width: 40%;
 }
 
@@ -314,36 +314,36 @@ figure {
     width: calc(100% - 80px);
 }
 
-.top_profile__imgTxt{
+.top_profile__imgTxt {
     font-size: 10px;
 }
 
 /* career */
-.top_career{
+.top_career {
     width: 90%;
     margin: 100px auto;
 }
 
-.top_career__inner{
+.top_career__inner {
     margin-top: 50px;
 }
 
-.top_carre__inner__parts{
+.top_carre__inner__parts {
     margin-top: 50px;
 }
 
-.top_career__aboutTtl:after{
+.top_career__aboutTtl:after {
     width: calc(100% - 180px);
 }
 
-.top_career__txt{
+.top_career__txt {
     width: 90%;
-    margin: 20px auto 0;    
+    margin: 20px auto 0;
     line-height: 2.1;
     font-size: 13px;
 }
 
-.top_career__contentWrap{
+.top_career__contentWrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -356,23 +356,23 @@ figure {
     transition: transform 0.5s ease, 0.3s ease, color 0.3s ease;
 }
 
-.top_career__contentWrap:hover{
+.top_career__contentWrap:hover {
     background: #6c9f82;
     color: #fff;
     transform: translateY(-5px);
 }
 
-.top_career__contentTxt{
+.top_career__contentTxt {
     font-size: 13px;
 }
 
-.top_career__contentTxt:first-of-type{
+.top_career__contentTxt:first-of-type {
     width: calc(35% - 5px);
     position: relative;
 }
 
-.top_career__contentTxt:first-of-type::after{
-    content:'';
+.top_career__contentTxt:first-of-type::after {
+    content: '';
     position: absolute;
     top: 50%;
     right: 5%;
@@ -382,11 +382,11 @@ figure {
     background-color: black;
 }
 
-.top_career__contentTxt:nth-of-type(2){
+.top_career__contentTxt:nth-of-type(2) {
     width: calc(65% - 5px);
 }
 
-.top_career__txt--more{
+.top_career__txt--more {
     display: block;
     font-size: 11px;
     text-align: right;
@@ -394,21 +394,21 @@ figure {
 
 /* モーダル中身 */
 /*モーダルの横幅を変更したい場合*/
-.modaal-container{
+.modaal-container {
     max-width: 600px;
 }
 
 /*モーダルのボタンの色を変更したい場合*/
-.modaal-close:after, 
-.modaal-close:before{
-	background:#ccc;	
+.modaal-close:after,
+.modaal-close:before {
+    background: #ccc;
 }
 
 .modaal-close:focus:after,
 .modaal-close:focus:before,
 .modaal-close:hover:after,
-.modaal-close:hover:before{
-	background:#666;
+.modaal-close:hover:before {
+    background: #666;
 }
 
 /* works */
@@ -448,14 +448,14 @@ figure {
     border-radius: 5px;
     box-shadow: 2px 2px 3px 0 rgba(100, 100, 100, .3);
     padding: 5px;
-    transition: transform 0.5s ease, 0.3s ease, color 0.3s ease!important;
+    transition: transform 0.5s ease, 0.3s ease, color 0.3s ease !important;
 }
 
-.top_work__content__parts--crd:hover{
-        transform: translateY(-5px);
+.top_work__content__parts--crd:hover {
+    transform: translateY(-5px);
 }
 
-.top_work__content__parts--crd:nth-of-type(n+4){
+.top_work__content__parts--crd:nth-of-type(n+4) {
     margin-top: 30px;
 }
 
@@ -486,16 +486,16 @@ figure {
     font-size: 13px;
 }
 
-.top_work__contetnt__txt--exp{
+.top_work__contetnt__txt--exp {
     font-size: 11px;
 }
 
-.top_work__skillWrap{
+.top_work__skillWrap {
     display: flex;
     flex-wrap: wrap;
 }
 
-.top_work__skillParts{
+.top_work__skillParts {
     font-size: 9px;
     border: 1px solid #858585;
     color: #858585;
@@ -574,6 +574,12 @@ figure {
 
     /* ▲fade-in▲ */
 
+    /* ▼スクロール▼ */
+    .scrolldown {
+        top: 90vh;
+    }
+    /* ▲スクロール▲ */
+
     /* ▼header▼ */
     .header {
         padding: 15px 0;
@@ -626,7 +632,7 @@ figure {
         margin-top: 50px;
     }
 
-    .top_work__content--mrk{
+    .top_work__content--mrk {
         display: block;
     }
 
@@ -634,30 +640,31 @@ figure {
         content: none;
     }
 
-    .top_work__content__parts--mark{
+    .top_work__content__parts--mark {
         width: 100%;
     }
 
-    .top_work__content__parts--mark:nth-of-type(n+2){
+    .top_work__content__parts--mark:nth-of-type(n+2) {
         margin-top: 30px;
     }
 
-    .top_work__content__parts--dsn{
+    .top_work__content__parts--dsn {
         width: calc((100% - 10px) / 2)
     }
 
     /* contact */
-    .top_contact{
+    .top_contact {
         display: block;
         padding: 30px 15px;
     }
 
-    .top_contact__inner{
+    .top_contact__inner {
         width: 100%;
     }
 
-    .top_contact__inner{
+    .top_contact__inner {
         margin-top: 30px;
     }
+
     /* ▲トップ▲ */
 }
