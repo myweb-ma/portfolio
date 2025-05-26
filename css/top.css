@@ -240,13 +240,53 @@ figure {
 .top_profile__inner {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .top_h1__subTtl {
     font-size: 13px;
 }
 
+/* ▼文字無限ループ▼ */
+.scroll-infinity__item--text {
+    font-family: 'LINE Seed Bold';
+    font-size: 70px;
+    color: #6c9f82;
+    white-space: nowrap;
+    display: inline-block;
+    width: auto;
+}
+
+@keyframes infinity-scroll-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.scroll-infinity__wrap {
+    display: flex;
+    overflow: hidden;
+}
+
+.scroll-infinity__list {
+    display: flex;
+    list-style: none;
+    padding: 0
+}
+
+.scroll-infinity__list--left {
+    animation: infinity-scroll-left 30s infinite linear 1.5s both;
+}
+
+.scroll-infinity__item {
+    width: calc(100vw / 6);
+}
+
+/* ▲文字無限ループ▲ */
 
 /* view more リンク装飾 */
 .top_link__vm {
@@ -322,7 +362,7 @@ figure {
 /* career */
 .top_career {
     width: 90%;
-    margin: 100px auto;
+    margin: 120px auto;
 }
 
 .top_career__inner {
@@ -379,7 +419,7 @@ figure {
     right: 5%;
     transform: translate(-50%, -50%);
     width: .5px;
-    height: 350%;
+    height: 240%;
     background-color: black;
 }
 
@@ -414,21 +454,21 @@ figure {
 
 .modaal-wrapper .modaal-close,
 .modaal-close:focus,
-.modaal-close:hover{
-    background-color: #b93d0c!important;
+.modaal-close:hover {
+    background-color: #b93d0c !important;
 }
 
 .modaal-close:focus:after,
 .modaal-close:focus:before,
 .modaal-close:hover:after,
-.modaal-close:hover:before{
-    background: #fff!important;
+.modaal-close:hover:before {
+    background: #fff !important;
 }
 
 /* works */
 .top_work {
     width: 90%;
-    margin: 100px auto;
+    margin: 120px auto;
 }
 
 .top_work__img {
@@ -522,13 +562,13 @@ figure {
 
 .js-design__fadein {
     opacity: 0;
-    transition: 2s;
+    transition: 1s;
 }
 
 .js-design__fadein.is-show {
     opacity: 1;
     animation-name: showOrder;
-    animation-duration: 1s;
+    animation-duration: .5s;
 }
 
 @keyframes showOrder {
@@ -592,6 +632,7 @@ figure {
     .scrolldown {
         top: -10%;
     }
+
     /* ▲スクロール▲ */
 
     /* ▼header▼ */
@@ -613,6 +654,14 @@ figure {
 
     /* ▲header▲ */
 
+    /* ▼文字無限ループ▼ */
+    .scroll-infinity__item--text {
+        width: calc(500vw / 6.5);
+        font-size: 53px;
+    }
+
+    /* ▲文字無限ループ▲ */
+
     /* ▼トップ▼ */
     .top {
         padding: 100px 0;
@@ -624,12 +673,12 @@ figure {
 
     .top_profile__inner {
         display: block;
+        margin-top: 0;
     }
 
     /* Profile */
     .top_profile__inner__parts {
         width: 100%;
-        margin-top: 50px;
     }
 
     /* work */
