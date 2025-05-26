@@ -37,7 +37,7 @@
 /*=== 丸が動いてスクロールを促す ====*/
 .scrolldown {
     position: absolute;
-    top: 8%;
+    top: -20%;
     left: 50%;
 }
 
@@ -234,6 +234,7 @@ figure {
     margin: 6rem auto;
     width: 90%;
     margin-top: 25%;
+    position: relative;
 }
 
 .top_profile__inner {
@@ -576,7 +577,7 @@ figure {
 
     /* ▼スクロール▼ */
     .scrolldown {
-        top: 90vh;
+        top: -10%;
     }
     /* ▲スクロール▲ */
 
