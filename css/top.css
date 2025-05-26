@@ -211,6 +211,7 @@ figure {
     font-size: 21px;
     letter-spacing: 2px;
     position: relative;
+    font-family: 'LINE Seed Bold'
 }
 
 .top_h3::after {
