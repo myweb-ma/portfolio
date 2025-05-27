@@ -75,10 +75,13 @@ $(function () {
   var flag = !access;
   if (flag) {
     $.cookie('access', false);
+
+    setTimeout(function () {
+      $(".js-modal-open").modaal('open');
+    }, 500);
   }
 
   $(".js-modal-open").modaal({
-    start_open: flag,
     overlay_close: true,
     before_open: function () {
       $('html').css('overflow-y', 'hidden');
