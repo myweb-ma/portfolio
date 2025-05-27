@@ -372,6 +372,7 @@ figure {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
+    -webkit-appearance: none;
 }
 
 /* ▲モーダル中身▲ */
@@ -475,12 +476,10 @@ figure {
 }
 
 /* モーダル中身 */
-/*モーダルの横幅を変更したい場合*/
 .modaal-container {
     max-width: 600px;
 }
 
-/*モーダルのボタンの色を変更したい場合*/
 .modaal-close:after,
 .modaal-close:before {
     background: #ccc;
