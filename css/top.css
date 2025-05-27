@@ -671,6 +671,12 @@ figure {
 
     /* ▲fade-in▲ */
 
+    /* ▼モーダル中身▼ */
+    .modal_inner__cont {
+        padding: 30px 0;
+    }
+    /* ▲モーダル中身▲ */
+
     /* ▼ボタン▼ */
     .top_link__vm--modal {
         width: 90%;
