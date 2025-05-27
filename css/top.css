@@ -512,8 +512,23 @@ figure {
     margin: 150px auto;
 }
 
-.top_work__img {
+.top_work__img,
+.top_career__siteImg {
+    width: 100%;
     margin-top: 50px;
+    display: block;
+    overflow:hidden;
+}
+
+.top_work__img > img,
+.top_career__siteImg > img{    
+    transition:1s all;
+}
+
+.top_work__img > img:hover,
+.top_career__siteImg > img:hover{
+    transform:scale(1.1,1.1);
+    transition:1s all;
 }
 
 .top_work__ttl::after {
