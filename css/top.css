@@ -368,7 +368,7 @@ figure {
     font-size: 18px;
 }
 
-.modal_inner__wrap{
+.modal_inner__none{
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
