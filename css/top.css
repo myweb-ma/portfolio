@@ -582,11 +582,11 @@ figure {
 }
 
 .top_work__contetnt__txt {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .top_work__contetnt__txt--exp {
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .top_work__skillWrap {
@@ -788,6 +788,14 @@ figure {
 
     .top_work__content__parts--dsn {
         width: calc((100% - 10px) / 2)
+    }
+
+    .top_work__contetnt__txt {
+        font-size: 13px;
+    }
+
+    .top_work__contetnt__txt--exp {
+        font-size: 11px;
     }
 
     /* ▲トップ▲ */
