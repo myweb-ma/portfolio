@@ -71,15 +71,6 @@ $(window).scroll(function () {
 
 // モーダル初回表示処理
 $(function () {
-  var access = $.cookie('access');
-  var flag = !access;
-  if (flag) {
-    $.cookie('access', false);
-
-    setTimeout(function () {
-      $(".js-modal-open").modaal('open');
-    }, 500);
-  }
 
   $(".js-modal-open").modaal({
     overlay_close: true,
