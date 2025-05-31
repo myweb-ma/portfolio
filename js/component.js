@@ -1,7 +1,5 @@
 $(function () {
-  // header と footer を読み込んだあとにバーを初期化する
   $("#header").load("header.html", function () {
-    $("#footer").load("footer.html");
 
     // header.html の中に splash_text が含まれている場合、load完了後に処理
     var splash_text = document.getElementById('splash_text');
