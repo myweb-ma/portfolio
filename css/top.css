@@ -617,7 +617,7 @@ figure {
 }
 
 .top_work__inner:nth-of-type(n+2) {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .top_work__content--crd,
@@ -937,6 +937,10 @@ figure {
 
     .top_work__content--mrk {
         display: block;
+    }
+    
+    .top_work__img{
+        margin-top: 20px;
     }
 
     .top_work__content--mrk.mark-border::after {
